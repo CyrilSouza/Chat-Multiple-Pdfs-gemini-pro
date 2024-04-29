@@ -44,8 +44,7 @@ def get_vector_store(text_chunks):
 def get_conversational_chain():
 
     prompt_template = """
-    Answer the question as detailed as possible from the provided context, make sure to provide all the details, if the answer is not in
-    provided context just say, "answer is not available in the context", don't provide the wrong answer\n\n
+    Answer the question as detailed as possible from the provided context, make sure to provide all the details, Act as a chatbot dont be rude.And try to provide whatever is asked by the user.If and only if the question asked is not related to the pdf the chatbot cant answer  then just say, "answer is not available in the context"\n\n
     Context:\n {context}?\n
     Question: \n{question}\n
 
